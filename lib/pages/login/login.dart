@@ -200,7 +200,9 @@ class _UsernameInputState extends State<UsernameInput> {
 
   void Function([String?])? tryLogin() {
     if (widget.usernameController.text.isEmpty ||
-        widget.teamNumController.text.isEmpty) return null;
+        widget.teamNumController.text.isEmpty) {
+      return null;
+    }
 
     return ([String? _]) {
       LoadingOverlay.of(context).show();

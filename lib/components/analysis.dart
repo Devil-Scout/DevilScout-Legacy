@@ -321,7 +321,7 @@ class RadarStatisticWidget extends StatisticWidget<RadarStatistic> {
         features: statistic.points.entries
             .map((e) => RadarChartFeature(label: e.key, value: e.value ?? 0))
             .toList(growable: false),
-        graphColor: Theme.of(context).colorScheme.primary.withOpacity(0.4),
+        graphColor: Theme.of(context).colorScheme.primary.withValues(alpha: 0.4),
         graphStrokeColor: Theme.of(context).colorScheme.primary,
         axisColor: Theme.of(context).colorScheme.onSurface,
         tickColor: Theme.of(context).colorScheme.onSurface,

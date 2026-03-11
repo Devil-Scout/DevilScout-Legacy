@@ -64,7 +64,7 @@ final lightTheme = ThemeData(
     ),
   ),
   dividerColor: Colors.transparent,
-  cardTheme: const CardTheme(
+  cardTheme: const CardThemeData(
     surfaceTintColor: Colors.transparent,
     elevation: 0,
   ),
